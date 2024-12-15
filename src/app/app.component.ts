@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TablaEmpleadosComponent } from './tabla-empleados/tabla-empleados.component'; // Importa el componente
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true, // Declara el componente independiente
+  imports: [TablaEmpleadosComponent], // Importa el componente aquí
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ejercicio14';
+  title = 'Lista de Empleados';
 }
